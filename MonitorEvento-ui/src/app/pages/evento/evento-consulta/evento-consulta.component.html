@@ -1,0 +1,47 @@
+<section class="content">
+
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <div class="container">
+        <br><br><br>
+
+        <h2>Relação de Eventos</h2>
+        <label *ngIf="listaDados.length == 0">Não há eventos registrados.</label>
+        <table class="table table-hover" *ngIf="listaDados.length > 0">
+            <thead>
+                <tr>
+                    <th>Região</th>
+                    <th>Total de Eventos</th>serv
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listaDados">
+                    <td>{{item.regiao}}</td>
+                    <td>{{item.totalEventos}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="box-title">Eventos ocorridos</h2>
+
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+        </div>
+
+        <div class="box-body">
+            <div class="chart">
+                <canvas id="lineChart" style="height: 250px; width: 627px;" height="150" width="800"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+</section>
