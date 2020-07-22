@@ -43,9 +43,7 @@ namespace MonitorarEvento
                     Description = "API Monitorar Evento",
                     Contact = new OpenApiContact
                     {
-                        Name = "Anderson",
-                        Email = "andersonsalles1975@gmail.com",
-                        Url = new Uri("https://www.linkedin.com/in/andersonsallesdesenvnet/")
+                        Name = "Anderson Salles"
                     }
                 });
 
